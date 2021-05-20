@@ -13,6 +13,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
+
 function generatePassword(){
   let pwchars = prompt("how many charaters do you want? min 8, max 128");
 
