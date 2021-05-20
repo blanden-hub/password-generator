@@ -12,25 +12,10 @@ function writePassword() {
 
   passwordText.value = password;
 }
-// listed all posible pasword inputs
 
 function generatePassword(){
-  let capLetters = "ABCDEFGHIJKLMNPQRSTYVWXYZ";
-  let lowLetters = "abcdefghijklmnopqrstuvwxyz";
-  let specials = "!@#$%^&*()_+-=><";
-  let numbers = "1234567890"
-
-//Used split method to split all the strings into substrings
-//used empty string as the separator to split bewteen each character
-
-  let cap = capLetters.split("");
-  let low = lowLetters.split("");
-  let spe = specials.split("")
-  let num = numbers.split("")
-
-  let characters = [];
-  let password = "";
   let pwchars = prompt("how many charaters do you want? min 8, max 128");
+
   if (pwchars < 8 | pwchars > 128){
     alert("password must be at least 8 charters and less than 128 charters! refresh your browser and try again!");
     return
@@ -69,6 +54,23 @@ function generatePassword(){
     }
   return password;
 }
+
+  var capLetters = "ABCDEFGHIJKLMNPQRSTYVWXYZ";
+  var lowLetters = "abcdefghijklmnopqrstuvwxyz";
+  var specials = "!@#$%^&*()_+-=><";
+  var numbers = "1234567890"
+
+//Used split method to split all the strings into substrings
+//used empty string as the separator to split bewteen each character
+
+  var cap = capLetters.split("");
+  var low = lowLetters.split("");
+  var spe = specials.split("")
+  var num = numbers.split("")
+
+  var characters = [];
+  var password = "";
+ 
 
 
 // Add event listener to generate button
